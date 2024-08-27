@@ -63,12 +63,12 @@
   <header class="header">
     <div class="container">
       <ul class="header__inner">
-        <li class="header__inner-item">
+        <li class="header__inner-logo">
           <a class="logo" href="index.html">
             <img class="logo__img" src="img/sprite/sprite.svg#logo" alt="Логотип">
           </a>
         </li>
-        <li class="header__inner-item">
+        <li class="header__inner-menu">
           <nav class="menu">
             <ul class="menu__items">
               <li class="menu__item">
@@ -88,6 +88,43 @@
               </li>
             </ul>
           </nav>
+          <div class="menu-small">
+            <div class="footer__top-box">
+              <span class="footer__text footer__text--top-tel">
+                Бесплатный звонок по России
+              </span>
+              <a class="footer__tel footer__tel--top-num anim-text anim-text--orange" href="tel:88005551290">
+                8 (800) 555-12-90
+              </a>
+            </div>
+            <div class="footer__top-box footer__top-box--btn-menu">
+              <button class="footer__btn btn" type="button">
+                Заказать звонок
+              </button>
+            </div>
+            <div class="menu-small__bottom">
+              <ul class="icons">
+                <li class="icons__item">
+                  <a class="icons__link" href="#">
+                    <svg><use xlink:href="img/sprite/sprite.svg#icons-1"></use></svg>
+                  </a>
+                </li>
+                <li class="icons__item">
+                  <a class="icons__link" href="#">
+                    <svg><use xlink:href="img/sprite/sprite.svg#icons-2"></use></svg>
+                  </a>
+                </li>
+                <li class="icons__item">
+                  <a class="icons__link" href="#">
+                    <svg><use xlink:href="img/sprite/sprite.svg#icons-3"></use></svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="search">
+                <svg><use xlink:href="img/sprite/sprite.svg#search"></use></svg>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="header__right-info">
           <a class="tel anim-text anim-text--orange" href="tel:88005551290">
@@ -100,6 +137,13 @@
             <svg><use xlink:href="img/sprite/sprite.svg#search"></use></svg>
           </div>
         </li>
+        <li class="header__menu-btn">
+          <button class="header__burger" id="header-burger">
+            <div class="header__burger-box">
+              <span class="header__icon"></span>
+            </div>
+          </button>
+        </li>
       </ul>
     </div>
   </header>
@@ -108,7 +152,7 @@
 
     <h1 class="title-hidden">Трейд 78 спецтехника из китая</h1>
 
-    <section class="top">
+    <section class="top"> 
       <div class="container">
         <div class="top__inner">
           <div class="top__content">
@@ -150,7 +194,7 @@
             <img class="top__item-img" src="img/sprite/sprite.svg#top-item-2" alt="Иконка">
             <div class="top__item-text">
               <p>
-                Гарантия до 3 лет или до 3000 моточасов
+                Гарантия до 3 лет или&nbsp;до&nbsp;3000 моточасов
               </p>
             </div>
           </li>
@@ -183,7 +227,7 @@
                 <img class="main-catalog__img" src="img/main-catalog-1.png">
               </picture>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-1"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-1.svg" alt="">
               </span>
             </a>
           </li>
@@ -198,7 +242,7 @@
                 <img class="main-catalog__img" src="img/main-catalog-2.png">
               </picture>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-2"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-2.svg" alt="">
               </span>
             </a>
           </li>
@@ -213,7 +257,7 @@
                 <img class="main-catalog__img" src="img/main-catalog-3.png">
               </picture>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-3"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-3.svg" alt="">
               </span>
             </a>
           </li>
@@ -228,7 +272,7 @@
                 <img class="main-catalog__img" src="img/main-catalog-4.png">
               </picture>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-4"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-4.svg" alt="">
               </span>
             </a>
           </li>
@@ -243,7 +287,7 @@
                 <img class="main-catalog__img" src="img/main-catalog-5.png">
               </picture>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-5"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-5.svg" alt="">
               </span>
             </a>
           </li>
@@ -258,7 +302,7 @@
                 <img class="main-catalog__img" src="img/main-catalog-6.png">
               </picture>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-6"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-6.svg" alt="">
               </span>
             </a>
           </li>
@@ -269,7 +313,7 @@
                 <svg><use xlink:href="img/sprite/sprite.svg#arrow-right"></use></svg>
               </span>
               <span class="main-catalog__bg">
-                <svg><use xlink:href="img/sprite/sprite.svg#main-catalog-bg-7"></use></svg>
+                <img class="main-catalog__bg-img" src="img/main-catalog-bg-7.svg" alt="">
               </span>
             </a>
           </li>
@@ -321,11 +365,7 @@
                 <span class="supplier__text--color">Наша задача</span> — предоставить наилучшие варианты техники по привлекательной цене. Приобретая погрузчики в ТРЕЙД78, вы получаете качественную спецтехнику, произведённую на заводах Китая, которую изготавливают уже не одно десятилетие и дают гарантию до 3 лет или до 3000 моточасов.
               </p>
             </div>
-            <picture>
-              <source type="image/avif" srcset="img/supplier-img.avif" />
-              <source type="image/webp" srcset="img/supplier-img.webp" />
-              <img class="supplier__img" src="img/supplier-img.png">
-            </picture>
+            <img class="supplier__img" src="img/supplier-img.png">
           </div>
         </div>
       </div>
@@ -500,19 +540,19 @@
                     </picture>
                   </li>
                 </ul>
-                <div class="select__box">
-                  <ul class="select__advantages">
-                    <li class="select__advantages-item">
-                      доставка от 1 дня
-                    </li>
-                    <li class="select__advantages-item">
-                      от 5 314 725 руб
-                    </li>
-                  </ul>
-                  <a class="select__btn-two" href="#">
-                    <svg><use xlink:href="img/sprite/sprite.svg#arrow-right"></use></svg>
-                  </a>
-                </div>
+              </div>
+              <div class="select__box">
+                <ul class="select__advantages">
+                  <li class="select__advantages-item">
+                    доставка от 1 дня
+                  </li>
+                  <li class="select__advantages-item">
+                    от 5 314 725 руб
+                  </li>
+                </ul>
+                <a class="select__btn-two" href="#">
+                  <svg><use xlink:href="img/sprite/sprite.svg#arrow-right"></use></svg>
+                </a>
               </div>
             </div>
           </li>
@@ -538,6 +578,29 @@
                   </ul>
                 </div>
               </div>
+              <ul class="select__two-items select__two-items--small">
+                <li class="select__two-item">
+                  <picture>
+                    <source type="image/avif" srcset="img/select-two-1.avif" />
+                    <source type="image/webp" srcset="img/select-two-1.webp" />
+                    <img class="select__two-img" src="img/select-two-1.jpg">
+                  </picture>
+                </li>
+                <li class="select__two-item">
+                  <picture>
+                    <source type="image/avif" srcset="img/select-two-2.avif" />
+                    <source type="image/webp" srcset="img/select-two-2.webp" />
+                    <img class="select__two-img" src="img/select-two-2.jpg">
+                  </picture>
+                </li>
+                <li class="select__two-item">
+                  <picture>
+                    <source type="image/avif" srcset="img/select-two-3.avif" />
+                    <source type="image/webp" srcset="img/select-two-3.webp" />
+                    <img class="select__two-img" src="img/select-two-3.jpg">
+                  </picture>
+                </li>
+              </ul>
               <div class="select__item-bottom">
                 <a class="select__btn" href="#">
                   К товару
@@ -545,7 +608,7 @@
                 </a>
               </div>
             </div>
-            <ul class="select__two-items">
+            <ul class="select__two-items select__two-items--main">
               <li class="select__two-item">
                 <picture>
                   <source type="image/avif" srcset="img/select-two-1.avif" />
@@ -681,18 +744,18 @@
             <span class="footer__text footer__text--top-tel">
               Бесплатный звонок по России
             </span>
-            <a class="footer__tel anim-text anim-text--orange" href="tel:88005551290">
+            <a class="footer__tel footer__tel--top-num anim-text anim-text--orange" href="tel:88005551290">
               8 (800) 555-12-90
             </a>
           </div>
-          <div class="footer__top-box">
+          <div class="footer__top-box footer__top-box--btn-footer">
             <button class="footer__btn btn" type="button">
               Заказать звонок
             </button>
           </div>
         </li>
-        <li class="footer__top-item">
-          <ul class="icons">
+        <li class="footer__top-item footer__top-item--two">
+          <ul class="icons icons--footer">
             <li class="icons__item">
               <a class="icons__link" href="#">
                 <svg><use xlink:href="img/sprite/sprite.svg#icons-1"></use></svg>
@@ -808,7 +871,7 @@
           </ul>
         </div>
         <div class="footer__logo">
-          <img class="" src="img/sprite/sprite.svg#footer-logo" alt="Логотип">
+          <img class="footer__logo-img" src="img/sprite/sprite.svg#footer-logo" alt="Логотип">
         </div>
       </div>
       <ul class="footer__bottom">
