@@ -65,7 +65,7 @@
       <ul class="header__inner">
         <li class="header__inner-logo">
           <a class="logo" href="index.html">
-            <img class="logo__img" src="img/sprite/sprite.svg#logo" alt="Логотип">
+            <svg class="logo__img"><use xlink:href="img/sprite/sprite.svg#logo"></use></svg>
           </a>
         </li>
         <li class="header__inner-menu">
@@ -76,10 +76,125 @@
                   Главная
                 </a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link anim-text anim-text--orange" href="catalog.html">
+              <li class="menu__item menu__item--catalog">
+                <a class="menu__link anim-text anim-text--orange" href="#">
                   Каталог товаров
                 </a>
+                <div class="menu__submenu">
+                  <ul class="menu__subitems container">
+                    <li class="menu__subitem">
+                      <h3 class="menu__subitem-title">
+                        Погрузчики
+                      </h3>
+                      <ul class="menu__subitem-items">
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Фронтальные погрузчики">
+                            Фронтальные погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Экскаваторы-погрузчики">
+                            Экскаваторы-погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Вилочные погрузчики">
+                            Вилочные погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Телескопические погрузчики">
+                            Телескопические погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Гусеничные экскаваторы">
+                            Гусеничные экскаваторы
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__subitem">
+                      <h3 class="menu__subitem-title">
+                        Навесное оборудование
+                      </h3>
+                      <ul class="menu__subitem-items">
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Грузоподъемность1">
+                            Грузоподъемность до 1 тонны
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Грузоподъемность2">
+                            Грузоподъемность до 2-х тонн
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Грузоподъемность3">
+                            Грузоподъемность до 3-х тонн
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__subitem">
+                      <h3 class="menu__subitem-title">
+                        Запчасти
+                      </h3>
+                      <ul class="menu__subitem-items">
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            ДВС
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Запчасти ДВС
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Ходовая часть
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Трансмиссия
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Гидравлическая система
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Электрическая система
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Фильтра
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Шины
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Топливная система
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Детали кабины
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu__item">
                 <a class="menu__link anim-text anim-text--orange" href="#">
@@ -168,7 +283,7 @@
               <button class="top__btn top__btn--long btn" type="button">
                 Записаться на тест-драйв
               </button>
-              <a class="top__btn top__btn--small btn btn--two" href="catalog.html">
+              <a class="top__btn top__btn--small btn btn--two" href="#">
                 В каталог
               </a>
             </div>
@@ -307,7 +422,7 @@
             </a>
           </li>
           <li class="main-catalog__item anim-bg">
-            <a class="main-catalog__link" href="catalog.html">
+            <a class="main-catalog__link" href="#">
               <span class="main-catalog__text main-catalog__text--two">
                 Смотреть каталог
                 <svg><use xlink:href="img/sprite/sprite.svg#arrow-right"></use></svg>

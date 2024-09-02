@@ -65,7 +65,7 @@
       <ul class="header__inner">
         <li class="header__inner-logo">
           <a class="logo" href="index.html">
-            <img class="logo__img" src="img/sprite/sprite.svg#logo" alt="Логотип">
+            <svg class="logo__img"><use xlink:href="img/sprite/sprite.svg#logo"></use></svg>
           </a>
         </li>
         <li class="header__inner-menu">
@@ -76,10 +76,125 @@
                   Главная
                 </a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item menu__item--catalog">
                 <a class="menu__link anim-text anim-text--orange" href="#">
                   Каталог товаров
                 </a>
+                <div class="menu__submenu">
+                  <ul class="menu__subitems container">
+                    <li class="menu__subitem">
+                      <h3 class="menu__subitem-title">
+                        Погрузчики
+                      </h3>
+                      <ul class="menu__subitem-items">
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Фронтальные погрузчики">
+                            Фронтальные погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Экскаваторы-погрузчики">
+                            Экскаваторы-погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Вилочные погрузчики">
+                            Вилочные погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Телескопические погрузчики">
+                            Телескопические погрузчики
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Гусеничные экскаваторы">
+                            Гусеничные экскаваторы
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__subitem">
+                      <h3 class="menu__subitem-title">
+                        Навесное оборудование
+                      </h3>
+                      <ul class="menu__subitem-items">
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Грузоподъемность1">
+                            Грузоподъемность до 1 тонны
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Грузоподъемность2">
+                            Грузоподъемность до 2-х тонн
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Грузоподъемность3">
+                            Грузоподъемность до 3-х тонн
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__subitem">
+                      <h3 class="menu__subitem-title">
+                        Запчасти
+                      </h3>
+                      <ul class="menu__subitem-items">
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            ДВС
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Запчасти ДВС
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Ходовая часть
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Трансмиссия
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Гидравлическая система
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Электрическая система
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Фильтра
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Шины
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Топливная система
+                          </a>
+                        </li>
+                        <li class="menu__subitem-item">
+                          <a class="menu__subitem-link" href="catalog.html#Запчасти">
+                            Детали кабины
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="menu__item">
                 <a class="menu__link anim-text anim-text--orange" href="#">
@@ -151,7 +266,7 @@
   <main class="main-catalog main-margin">
 
     <section class="catalog">
-      <div class="container">
+      <div class="catalog__container container">
         <h2 class="catalog__title title title--small">
           <img class="catalog__title-img" src="img/sprite/sprite.svg#title-arrow" alt="стрелка">
           Каталог товаров
@@ -210,8 +325,20 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="catalog__container-two container">
         <div class="catalog__content">
           <ul class="catalog__filters">
+            <li class="catalog__filters-item">
+              <div class="catalog__filters-item-top">
+                <h3 class="catalog__filters-item-top-title">
+                  Фильтры
+                </h3>
+                <span class="catalog__filters-item-top-close">
+                  Отмена
+                </span>
+              </div>
+            </li>
             <li class="catalog__filters-item catalog__filters-item--checkbox">
               <h3 class="catalog__filters-title">
                 Производитель
@@ -418,6 +545,11 @@
                 </li>
               </ul>
             </li>
+            <li class="catalog__filters-item">
+              <button class="catalog__filters-item-btn btn" type="button">
+                Применить
+              </button>
+            </li>
           </ul>
           <div class="catalog__products">
             <div class="catalog__products-content">
@@ -429,59 +561,84 @@
                   </span>
                 </div>
               </div>
-              <div class="catalog__first">
-                <div class="catalog__first-box">
-                  <span class="catalog__first-active">
-                    Популярные
-                  </span>
-                  <img class="catalog__first-arrow" src="img/sprite/sprite.svg#catalog-first-arrow" alt="стрелочка">
+              <div class="catalog__first touchable-bg">
+                <div class="catalog__filters-small">
+                  <button class="catalog__filters-small-btn" type="button">
+                    <img class="catalog__filters-small-img" src="img/sprite/sprite.svg#filters-small-img" alt="фильтры">
+                    Фильтры
+                  </button>
                 </div>
-                <ul class="catalog__first-items">
-                  <li class="catalog__first-item">
-                    <label class="form-content__checkbox">
-                      <input class="form-content__input-checkbox" type="radio" name="filter" value="Популярные" checked>
-                      <span class="form-content__visible">
-                        <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
-                      </span>
-                      <span class="form-content__text">
-                        Популярные
-                      </span>
-                    </label>
-                  </li>
-                  <li class="catalog__first-item">
-                    <label class="form-content__checkbox">
-                      <input class="form-content__input-checkbox" type="radio" name="filter" value="Дешевле">
-                      <span class="form-content__visible">
-                        <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
-                      </span>
-                      <span class="form-content__text">
-                        Дешевле
-                      </span>
-                    </label>
-                  </li>
-                  <li class="catalog__first-item">
-                    <label class="form-content__checkbox">
-                      <input class="form-content__input-checkbox" type="radio" name="filter" value="Дороже">
-                      <span class="form-content__visible">
-                        <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
-                      </span>
-                      <span class="form-content__text">
-                        Дороже
-                      </span>
-                    </label>
-                  </li>
-                  <li class="catalog__first-item">
-                    <label class="form-content__checkbox">
-                      <input class="form-content__input-checkbox" type="radio" name="filter" value="Новинки">
-                      <span class="form-content__visible">
-                        <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
-                      </span>
-                      <span class="form-content__text">
-                        Новинки
-                      </span>
-                    </label>
-                  </li>
-                </ul>
+                <div class="catalog__first-small">
+                  <div class="catalog__first-box">
+                    <span class="catalog__first-active">
+                      Популярные
+                    </span>
+                    <img class="catalog__first-arrow" src="img/sprite/sprite.svg#catalog-first-arrow" alt="стрелочка">
+                    <img class="catalog__first-arrow-two" src="img/sprite/sprite.svg#first-img" alt="стрелочка">
+                  </div>
+                  <div class="catalog__first-inner touchable">
+                    <span class="touchable-trigger"></span>
+                    <div class="catalog__first-wrapper">
+                      <h3 class="catalog__first-title">
+                        Показать сначала
+                      </h3>
+                      <div class="catalog__first-close">
+                        Отмена
+                      </div>
+                    </div>
+                    <ul class="catalog__first-items">
+                      <li class="catalog__first-item">
+                        <label class="form-content__checkbox">
+                          <input class="form-content__input-checkbox" type="radio" name="filter" value="Популярные" checked>
+                          <span class="form-content__visible">
+                            <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
+                          </span>
+                          <span class="form-content__text">
+                            Популярные
+                          </span>
+                        </label>
+                      </li>
+                      <li class="catalog__first-item">
+                        <label class="form-content__checkbox">
+                          <input class="form-content__input-checkbox" type="radio" name="filter" value="Дешевле">
+                          <span class="form-content__visible">
+                            <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
+                          </span>
+                          <span class="form-content__text">
+                            Дешевле
+                          </span>
+                        </label>
+                      </li>
+                      <li class="catalog__first-item">
+                        <label class="form-content__checkbox">
+                          <input class="form-content__input-checkbox" type="radio" name="filter" value="Дороже">
+                          <span class="form-content__visible">
+                            <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
+                          </span>
+                          <span class="form-content__text">
+                            Дороже
+                          </span>
+                        </label>
+                      </li>
+                      <li class="catalog__first-item">
+                        <label class="form-content__checkbox">
+                          <input class="form-content__input-checkbox" type="radio" name="filter" value="Новинки">
+                          <span class="form-content__visible">
+                            <svg><use xlink:href="img/sprite/sprite.svg#check"></use></svg>
+                          </span>
+                          <span class="form-content__text">
+                            Новинки
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                    <div class="catalog__first-btn-box">
+                      <button class="catalog__first-btn btn" type="button">
+                        Применить
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <ul class="catalog__items">
